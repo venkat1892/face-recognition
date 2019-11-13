@@ -233,33 +233,33 @@ nav ul li a span {
     color: rgba(0, 0, 0, 0.15);
 }
 .iconA {
-    background-image:url('Icons/Add.jpg');
+    background-image:url('../images/Add.jpg');
 	width:20px;
 }
 /*-----------------------Block Images----------------------*/
 .bg-light-blue .inner{
-	background-image:url('Icons/add.png');
+	background-image:url('../images/add.png');
 	background-size:contain;
 	background-position:right;
 	background-repeat:no-repeat;
 	background-origin: content-box;
 }
 .bg-orange .inner{
-	background-image:url('Icons/updated.png');
+	background-image:url("../images/update.png");
 	background-size:contain;
 	background-position:right;
 	background-repeat:no-repeat;
 	background-origin: content-box;
 }
 .bg-grass .inner{
-	background-image:url('Icons/Delete.png');
+	background-image:url('../images/Delete.png');
 	background-size:contain;
 	background-position:right;
 	background-repeat:no-repeat;
 	background-origin: content-box;
 }
 .bg-wood .inner{
-	background-image:url('Icons/Search.png');
+	background-image:url('../images/Search.png');
 	background-size:contain;
 	background-position:right;
 	background-repeat:no-repeat;
@@ -267,7 +267,7 @@ nav ul li a span {
 }
 /*-----------------------Dashboard Background-----------------------*/
 #content{
-	background-image: url('Icons/Dashboard1.png');
+	background-image: url('../images/db_img.png');
     background-size: cover;
     background-origin: content-box;
 }
