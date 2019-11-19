@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>LOGIN FORM</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/login.css')}}">
+<!--<script type="text/javascript" src="{{url_for('static' , filename='js/login.js')}}"></script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<br>
+  <form  action="" method="post">
+  	<img src="{{url_for('static', filename='images/df_logo-1.png')}}"><br>
+  	<h3 id="admin">ADMIN</h3>
+    <input type="text"  name="username" placeholder="Username" value="{{ request.form.username }}"><br><br>
+    <input type="password"  name="password" placeholder="Password" value="{{ request.form.password }}"><br><br><br>
+      <button class="button" style="vertical-align:middle"><span>Submit</span></button>
+  <!--  <span id="forgot_password"><a href="#">Forgot Password</a></span>-->
+  </form><br>
+ <!--{% if error %}-->
+    <h1 style="background-color: white;" class="error"><strong>Error:</strong> {{ error }}</h1>
+      <!--{% endif %}-->
+ </body>
+ </html>
+
+ 
