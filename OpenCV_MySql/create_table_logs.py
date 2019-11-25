@@ -13,6 +13,6 @@ create table logs(
    check_out timestamp);
 """
 c.execute(sql)
-print("Users table created")
+print("Logs table created")
 
 conn.close()

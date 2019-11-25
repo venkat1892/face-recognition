@@ -1,12 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33935011-cb41-4b2c-ba4e-62d6fc59ef6d" name="Default Changelist" comment="" />
+    <list default="true" id="33935011-cb41-4b2c-ba4e-62d6fc59ef6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/create_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/create_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_eye.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_eye.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_eye_tree_eyeglasses.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_eye_tree_eyeglasses.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalcatface.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalcatface.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalcatface_extended.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalcatface_extended.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_alt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_alt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_alt2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_alt2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_fullbody.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_fullbody.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_lefteye_2splits.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_lefteye_2splits.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_licence_plate_rus_16stages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_licence_plate_rus_16stages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_lowerbody.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_lowerbody.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_profileface.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_profileface.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_righteye_2splits.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_righteye_2splits.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_russian_plate_number.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_russian_plate_number.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_smile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_smile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_upperbody.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/haarcascade_upperbody.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/haarcascades/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/haarcascades/sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/record_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/record_face.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenCV/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenCV/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OpenCV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OpenCV.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_table_logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_table_logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_table_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_table_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detector_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/detector_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_eye.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_eye.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_eye_tree_eyeglasses.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_eye_tree_eyeglasses.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalcatface.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_frontalcatface.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalcatface_extended.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_frontalcatface_extended.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt_tree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_alt_tree.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_fullbody.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_fullbody.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_lefteye_2splits.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_lefteye_2splits.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_licence_plate_rus_16stages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_licence_plate_rus_16stages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_lowerbody.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_lowerbody.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_profileface.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_profileface.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_righteye_2splits.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_righteye_2splits.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_russian_plate_number.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_russian_plate_number.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_smile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_smile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/haarcascade_upperbody.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/haarcascade_upperbody.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascades/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/record_face.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/css/add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/css/delete.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/css/delete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/css/update.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/css/update.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/assets/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/css/add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/css/delete.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/css/delete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/css/update.css" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/css/update.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/templates/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UI_with_Flask/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../UI_with_Flask/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangoapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangoapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangofile/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangofile/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangofile/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangofile/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/djangofile/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/djangofile/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../djangofile/templates/code.html" beforeDir="false" afterPath="$PROJECT_DIR$/../djangofile/templates/code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webcamera/camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/../webcamera/camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webcamera/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../webcamera/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webcamera/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../webcamera/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,6 +137,8 @@
   <component name="ProjectId" id="1TbQXlHgB68XhCkX7IyU2fvdMsY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/flask_mysql_virtual/project/test.py" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -36,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.create_table_logs">
+  <component name="RunManager" selected="Python.detector">
     <configuration name="create_table_logs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,6 +167,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_table_logs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -58,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="detector_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="create_table_users" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,7 +189,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detector_time.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_table_users.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="detector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OpenCV" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detector.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,28 +233,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/record_face.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="OpenCV" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/flask_mysql_virtual/project" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/flask_mysql_virtual/project/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,6 +255,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trainer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -144,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.create_table_logs" />
-        <item itemvalue="Python.detector_time" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.detector" />
         <item itemvalue="Python.trainer" />
         <item itemvalue="Python.record_face" />
+        <item itemvalue="Python.create_table_users" />
+        <item itemvalue="Python.create_table_logs" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +285,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573726399967</updated>
+      <workItem from="1574658183120" duration="5015000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$create_table_users.coverage" NAME="create_table_users Coverage Results" MODIFIED="1574661617678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$create_table_logs.coverage" NAME="create_table_logs Coverage Results" MODIFIED="1574661556401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$record_face.coverage" NAME="record_face Coverage Results" MODIFIED="1574661630373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$detector_time.coverage" NAME="detector_time Coverage Results" MODIFIED="1574659586908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$trainer.coverage" NAME="trainer Coverage Results" MODIFIED="1574661688508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$detector.coverage" NAME="detector Coverage Results" MODIFIED="1574661810731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/OpenCV_MySql$create_database.coverage" NAME="create_database Coverage Results" MODIFIED="1574661504801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
