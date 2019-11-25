@@ -1,0 +1,91 @@
+  img{
+	  border-radius:100%;
+	  border:2px solid orange; 
+	  margin-left:1%; 
+	  width:150px;
+	  height:150px;
+    background-color: #84878D;
+	  }
+#forgot_password{
+		text-align:center;
+		color:white;
+	}
+	  a{
+      text-decoration: none;
+    }
+   #admin{
+	 color:orange;
+	 
+   }
+   form{
+    text-align:center;
+      border:3px solid orange;
+     margin-top: 37px;
+    margin-bottom: 100px;
+    margin-right: 35%;
+    margin-left: 35%;
+   border-radius:5%;
+   }
+
+  input[type=text] , input[type=password]{
+  width: 50%;
+  color: black;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+} 
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+ body{ 
+	   	text-align:center;
+	   background-image:url("../images/office.jpg");
+	background-size:cover;
+    
+    }
+    .error{
+   background-color: white;
+   }
