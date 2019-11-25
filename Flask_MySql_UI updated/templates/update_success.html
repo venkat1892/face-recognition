@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Add, update and ...... </title>
     <meta charset="UTF-8">
     <title>updated Successfully</title>
 </head>
 <body>
+        <div id="logo">
+                <a href="{{url_for('dashboard')}}">
+                    <img src="{{url_for('static', filename='images/df_logo-1.png')}}">
+                </a>
+            </div>
+            <div id="Data">
+                <h1>Dashboard</h1>
+            </div>
+            <div id="signout">
+            <a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
+            </div>
+            </header>
+            <nav>
+                    <ul id="nav">
+                       <li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
+                       <li class="i_house"><a href="{{url_for('add')}}" class=""><span><i  class="fa fa-user-plus"></i>Add Employee</span></a></li>
+                       <li class="i_house"><a href="{{url_for('update')}}" class=""><span><i  class="fa fa-user"></i>Update Employee</span></a></li>
+                       <li class="i_house"><a href="{{url_for('delete')}}" class=""><span><i  class="fa fa-trash"></i>Delete Employee</span></a></li>
+                       <li class="i_house"><a href="{{url_for('logs')}}" class=""><span><i  class="fa fa-search"></i>Quick Search</span></a></li>
+                       <li class="i_house"><a href="{{url_for('logs')}}" class=""><span><i  class="fa fa-history"></i>Logs</span></a></li>
+                       <li class="i_house"><a href="{{url_for('login')}}" class=""><span><i  class="fa fa-sign-out"></i>Sign Out</span></a></li>
+                    </ul>
+                 </nav>
 <h1>{{msg}} employee details updated successfully</h1>
 </body>
 </html>
