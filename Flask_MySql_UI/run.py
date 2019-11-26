@@ -3,7 +3,6 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'root'
@@ -98,6 +97,20 @@ def update():
         mycur.close()
         return render_template('update_success.html', msg=msg)
     return render_template("update.html")
+
+
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    if request.method == 'POST':
+        eid = request.form['id']
+        ename = request.form['emp_name']
+        mycur = mysql.connection.cursor()
+        sql = "select * from employee where id = %s or emp_name= %s"
+        val = (eid, ename)
+        mycur.execute(sql, val)
+        msg = mycur.fetchall()
+        return render_template('search_success.html', msg=msg)
+    return render_template("search.html")
 
 
 if __name__ == '__main__':
