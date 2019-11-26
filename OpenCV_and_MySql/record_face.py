@@ -15,12 +15,8 @@ cap = cv2.VideoCapture(0)
 
 uname = input("Enter your name: ")
 emp_id = input("Enter Employee_id ")
-# sql = 'Insert into users (uid,uname) values (%s,%s)'
-# val = (uid, uname)
-# c.execute('INSERT INTO users (name,uid) VALUES (%s,%s)', (uname,uid))
 c.execute('INSERT INTO users (name,emp_id) VALUES (%s,%s)', (uname, emp_id, ))
 
-# c.execute(sql,val)
 uid = c.lastrowid
 
 sampleNum = 0
@@ -33,6 +29,7 @@ while True:
         sampleNum = sampleNum + 1
         cv2.imwrite("dataset/User." + str(uid) + "." + str(sampleNum) + ".jpg", gray[y:y + h, x:x + w])
         cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.putText(img, 'capturing wait', (x + 2, y + h - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (51, 73, 255), 2)
         cv2.waitKey(500)
     cv2.imshow('img', img)
     cv2.waitKey(1);
