@@ -3,7 +3,7 @@ import numpy as np
 import mysql.connector
 import os
 
-conn = mysql.connector.connect(host="localhost", user="root", passwd="root", database='face_opencv')
+conn = mysql.connector.connect(host="localhost", user="root", passwd="root", database='face_recognition')
 c = conn.cursor()
 
 fname = "recognizer/trainingData.yml"

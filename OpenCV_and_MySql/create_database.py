@@ -5,11 +5,11 @@ conn = mysql.connector.connect(host="localhost", user="root", passwd="root", aut
 
 c = conn.cursor()
 sql = """ 
-DROP DATABASE IF EXISTS face_opencv;
-    CREATE DATABASE face_opencv; """
+DROP DATABASE IF EXISTS face_recognition;
+    CREATE DATABASE face_recognition; """
 
 c.execute(sql)
-print("Database created: face_openCV")
+print("Database created: face_recognition")
 
 
 conn.close()
