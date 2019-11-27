@@ -8,7 +8,7 @@ sql = """
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
            id integer unique primary key auto_increment,
-           name text,
+           name varchar(40),
            emp_id varchar(5) unique
 );
 """

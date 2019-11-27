@@ -23,31 +23,28 @@
                 </div>
                 </header>
                 <nav>
-                        <ul id="nav">
-                           <li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
+	<ul id="nav">
+		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
 		<li class="i_house"><a href="{{url_for('add')}}" class=""><span><i  class="fa fa-user-plus"></i>Add Employee</span></a></li>
+		<li class="i_house"><a href="{{url_for('employee')}}" class=""><span><i  class="fa fa-search"></i>Employee Details</span></a></li>
 		<li class="i_house"><a href="{{url_for('update')}}" class=""><span><i  class="fa fa-user"></i>Update Employee</span></a></li>
 		<li class="i_house"><a href="{{url_for('delete')}}" class=""><span><i  class="fa fa-trash"></i>Delete Employee</span></a></li>
 		<li class="i_house"><a href="{{url_for('search')}}" class=""><span><i  class="fa fa-search"></i>Quick Search</span></a></li>
 		<li class="i_house"><a href="{{url_for('logs')}}" class=""><span><i  class="fa fa-history"></i>Logs</span></a></li>
 		<li class="i_house"><a href="{{url_for('login')}}" class=""><span><i  class="fa fa-sign-out"></i>Sign Out</span></a></li>
 	</ul>
-                     </nav>
+</nav>
    <div id="container"   >
 
-         
+         <h1>Employee Log Details</h1>
             
 <table>
     
     <tr>
-    <th>Emp_id</th>
-    <th>Emp_name</th>
-    <th>DOB</th>
-    <th>Gender</th>
-    <th>Email</th>
-    <th>Phone</th>
-    <th>Address</th>
-    <th>Blood_Group</th>
+    <th>EmpLoyee Id</th>
+    <th>Employee Name</th>
+    <th>Check In Time</th>
+    <th>Check Out Time</th>
     </tr>
     {% for row in data %}
             <tr>
@@ -55,10 +52,6 @@
                <td>{{row[1]}}</td>
                <td> {{ row[2]}}</td>
                <td>{{row[3]}}</td>
-                <td>{{row[4]}}</td>
-                <td>{{row[5]}}</td>
-                <td>{{row[6]}}</td>
-                <td>{{row[7]}}</td>
 
             </tr>
          {% endfor %}

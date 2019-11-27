@@ -48,8 +48,8 @@ def add():
                       "%s, %s, %s, %s, %s, %s, %s)", (id, emp_name, dob, gender, email, phone, address, blood_group))
         mysql.connection.commit()
         mycur.close()
-        # msg = emp_name
-        return redirect(url_for('success'))
+        msg = emp_name
+        return render_template('add_success.html', msg=msg)
     return render_template("add.html")
 
 
@@ -59,7 +59,7 @@ def delete():
         eid = request.form['id']
         ename = request.form['emp_name']
         mycur = mysql.connection.cursor()
-        sql = "Delete from employee where id = %s and emp_name= %s"
+        sql = "Delete from employee where id = %s or emp_name= %s"
         val = (eid, ename)
         mycur.execute(sql, val)
         mysql.connection.commit()
@@ -77,9 +77,17 @@ def delete_success():
 @app.route('/logs')
 def logs():
     mycur = mysql.connection.cursor()
-    mycur.execute("select * from employee")
+    mycur.execute("select * from logs")
     data = mycur.fetchall()
     return render_template("logs.html", data=data)
+
+
+@app.route('/employee')
+def employee():
+    mycur = mysql.connection.cursor()
+    mycur.execute("select * from employee")
+    data = mycur.fetchall()
+    return render_template("employee.html", data=data)
 
 
 @app.route('/update', methods=['get', 'post'])
