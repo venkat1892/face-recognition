@@ -10,13 +10,19 @@ app.config['MYSQL_DB'] = 'face_recognition'
 
 mysql = MySQL(app)
 
-
 @app.route('/', methods=['GET', 'POST'])
 def login():
     error = None
     if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-            error = 'Invalid Credentials. Please try again.'
+        usr = request.form['username']
+        passwd = request.form['password']
+        mycur = mysql.connection.cursor()
+        sql = "Select * from admin_users where user_name = %s and passwd = %s"
+        val = (usr, passwd)
+        mycur.execute(sql, val)
+        myresult = mycur.fetchall()
+        if mycur.rowcount != 1:
+            error = 'Invalid Credentials.'
         else:
             return redirect(url_for('dashboard'))
     return render_template('login.html', error=error)
