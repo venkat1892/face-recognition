@@ -2,11 +2,10 @@ import cv2
 import numpy as np
 import mysql.connector
 import os
-from datetime import datetime
+from datetime import datetime, date
 
-conn = mysql.connector.connect(host="localhost", user="root", passwd="root", database='face_recognition')
+conn = mysql.connector.connect(host="localhost", user="root", passwd="root", database='face_recognition', buffered=True)
 c = conn.cursor()
-
 fname = "recognizer/trainingData.yml"
 if not os.path.isfile(fname):
     print("Please train the data first")
@@ -32,8 +31,16 @@ while True:
         if conf < 50:
             cv2.putText(img, name + str(round(conf, 2)), (x + 2, y + h - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (150, 255, 0),
                         2)
-            now = datetime.now()
-            c.execute("Insert into logs(emp_id ,emp_name,check_in) values(%s, %s, %s)", (emp_id, name, now))
+            sql = "select check_out from logs where emp_id = %s  and check_out is null"
+            val = emp_id
+            c.execute(sql, (val,))
+            res = c.fetchone()
+            row_count = c.rowcount
+            if row_count == 1:
+                now = datetime.now()
+                sql = "update logs set check_out = %s where emp_id = %s and check_out is null"
+                val = (now, emp_id)
+                c.execute(sql, val)
 
         else:
             cv2.putText(img, 'No Match', (x + 2, y + h - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
