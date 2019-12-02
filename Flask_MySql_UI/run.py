@@ -17,7 +17,7 @@ def login():
         usr = request.form['username']
         passwd = request.form['password']
         mycur = mysql.connection.cursor()
-        sql = "Select * from admin_users where user_name = %s and passwd = %s"
+        sql = "Select * from admin_users where username = %s and passwd = %s"
         val = (usr, passwd)
         mycur.execute(sql, val)
         myresult = mycur.fetchall()
