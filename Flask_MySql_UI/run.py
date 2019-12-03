@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for, redirect, request
-from flask_mysqldb import MySQL
+from flask_mysqldb import MySQL       #
 
 app = Flask(__name__)
 
@@ -9,6 +9,7 @@ app.config['MYSQL_PASSWORD'] = 'root'
 app.config['MYSQL_DB'] = 'face_recognition'
 
 mysql = MySQL(app)
+
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
@@ -85,7 +86,22 @@ def logs():
     mycur = mysql.connection.cursor()
     mycur.execute("select * from logs")
     data = mycur.fetchall()
+
     return render_template("logs.html", data=data)
+
+
+@app.route('/logs_search', methods=['GET', 'POST'])
+def logs_search():
+    if request.method == 'POST':
+        eid = request.form['id']
+        ename = request.form['emp_name']
+        mycur = mysql.connection.cursor()
+        sql = "select * from logs where emp_id = %s or emp_name= %s"
+        val = (eid, ename)
+        mycur.execute(sql, val)
+        msg = mycur.fetchall()
+        return render_template('logs_success.html', msg=msg)
+    return render_template("logs_search.html")
 
 
 @app.route('/employee')
