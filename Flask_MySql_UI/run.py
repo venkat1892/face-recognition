@@ -1,16 +1,20 @@
-from flask import Flask, render_template, url_for, redirect, request
-from flask_mysqldb import MySQL       #
+from flask import Flask, render_template, url_for, redirect, request  # importing Flask libraries
+from flask_mysqldb import MySQL  # Mysql library for database connection
 
+# Initialize the app
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root'
-app.config['MYSQL_DB'] = 'face_recognition'
+# Database Connection
+app.config['MYSQL_HOST'] = 'localhost'  # Host
+app.config['MYSQL_USER'] = 'root'  # User_Name
+app.config['MYSQL_PASSWORD'] = 'root'  # Password
+app.config['MYSQL_DB'] = 'face_recognition'  # Database_Name
 
+# Initialize the MySql Database
 mysql = MySQL(app)
 
 
+# login function
 @app.route('/', methods=['GET', 'POST'])
 def login():
     error = None
@@ -28,17 +32,17 @@ def login():
             return redirect(url_for('dashboard'))
     return render_template('login.html', error=error)
 
-
+# dashboard function
 @app.route('/dashboard')
 def dashboard():
     return render_template("dashboard.html")
 
-
+# add Success page
 @app.route('/success')
 def success():
     return render_template("add_success.html")
 
-
+# Adding employee details - add() function
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
@@ -59,7 +63,7 @@ def add():
         return render_template('add_success.html', msg=msg)
     return render_template("add.html")
 
-
+# Deleting Employee Details - Delete() function
 @app.route('/delete', methods=['GET', 'POST'])
 def delete():
     if request.method == 'POST':
@@ -75,12 +79,12 @@ def delete():
         return render_template('delete_success.html', msg=msg)
     return render_template("delete.html")
 
-
+# Delete page Success
 @app.route('/delete_success')
 def delete_success():
     return render_template("delete_success.html")
 
-
+# logs function
 @app.route('/logs')
 def logs():
     mycur = mysql.connection.cursor()
@@ -89,7 +93,7 @@ def logs():
 
     return render_template("logs.html", data=data)
 
-
+# logs search function
 @app.route('/logs_search', methods=['GET', 'POST'])
 def logs_search():
     if request.method == 'POST':
@@ -103,7 +107,7 @@ def logs_search():
         return render_template('logs_success.html', msg=msg)
     return render_template("logs_search.html")
 
-
+# For showing employee details function
 @app.route('/employee')
 def employee():
     mycur = mysql.connection.cursor()
@@ -111,7 +115,7 @@ def employee():
     data = mycur.fetchall()
     return render_template("employee.html", data=data)
 
-
+# For updating employee details function
 @app.route('/update', methods=['get', 'post'])
 def update():
     if request.method == 'POST':
@@ -128,7 +132,7 @@ def update():
         return render_template('update_success.html', msg=msg)
     return render_template("update.html")
 
-
+# searching Employee details
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
@@ -142,6 +146,6 @@ def search():
         return render_template('search_success.html', msg=msg)
     return render_template("search.html")
 
-
+# calling main function
 if __name__ == '__main__':
     app.run(debug=True)
