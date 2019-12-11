@@ -1,8 +1,14 @@
 from flask import Flask, render_template, url_for, redirect, request  # importing Flask libraries
 from flask_mysqldb import MySQL  # Mysql library for database connection
+from werkzeug.utils import secure_filename
+import os
 
 # Initialize the app
 app = Flask(__name__)
+
+
+if not os.path.exists('./Emp_Images'):
+    os.makedirs('./Emp_Images')
 
 # Database Connection
 app.config['MYSQL_HOST'] = 'localhost'  # Host
@@ -32,15 +38,18 @@ def login():
             return redirect(url_for('dashboard'))
     return render_template('login.html', error=error)
 
+
 # dashboard function
 @app.route('/dashboard')
 def dashboard():
     return render_template("dashboard.html")
 
+
 # add Success page
 @app.route('/success')
 def success():
     return render_template("add_success.html")
+
 
 # Adding employee details - add() function
 @app.route('/add', methods=['GET', 'POST'])
@@ -54,14 +63,18 @@ def add():
         phone = request.form['phone']
         address = request.form['address']
         blood_group = request.form['blood_group']
+        f = request.files['file']
+        f.save(os.path.join('Emp_Images', secure_filename(f.filename)))
         mycur = mysql.connection.cursor()
-        mycur.execute("Insert into employee(id, emp_name, dob, gender, email, phone, address, blood_group) values(%s, "
-                      "%s, %s, %s, %s, %s, %s, %s)", (id, emp_name, dob, gender, email, phone, address, blood_group))
+        mycur.execute(
+            "Insert into employee(id, emp_name, dob, gender, email, phone, address, blood_group) values(%s, "
+            "%s, %s, %s, %s, %s, %s, %s)", (id, emp_name, dob, gender, email, phone, address, blood_group))
         mysql.connection.commit()
         mycur.close()
-        msg = emp_name
+        msg = "Employee added Successfully"
         return render_template('add_success.html', msg=msg)
     return render_template("add.html")
+
 
 # Deleting Employee Details - Delete() function
 @app.route('/delete', methods=['GET', 'POST'])
@@ -79,10 +92,12 @@ def delete():
         return render_template('delete_success.html', msg=msg)
     return render_template("delete.html")
 
+
 # Delete page Success
 @app.route('/delete_success')
 def delete_success():
     return render_template("delete_success.html")
+
 
 # logs function
 @app.route('/logs')
@@ -92,6 +107,7 @@ def logs():
     data = mycur.fetchall()
 
     return render_template("logs.html", data=data)
+
 
 # logs search function
 @app.route('/logs_search', methods=['GET', 'POST'])
@@ -107,6 +123,7 @@ def logs_search():
         return render_template('logs_success.html', msg=msg)
     return render_template("logs_search.html")
 
+
 # For showing employee details function
 @app.route('/employee')
 def employee():
@@ -114,6 +131,7 @@ def employee():
     mycur.execute("select * from employee")
     data = mycur.fetchall()
     return render_template("employee.html", data=data)
+
 
 # For updating employee details function
 @app.route('/update', methods=['get', 'post'])
@@ -132,6 +150,7 @@ def update():
         return render_template('update_success.html', msg=msg)
     return render_template("update.html")
 
+
 # searching Employee details
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -145,6 +164,7 @@ def search():
         msg = mycur.fetchall()
         return render_template('search_success.html', msg=msg)
     return render_template("search.html")
+
 
 # calling main function
 if __name__ == '__main__':

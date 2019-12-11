@@ -29,16 +29,15 @@
 		<li class="i_house"><a href="{{url_for('delete')}}" class=""><span><i  class="fa fa-trash"></i>Delete Employee</span></a></li>
 		<li class="i_house"><a href="{{url_for('search')}}" class=""><span><i  class="fa fa-search"></i>Quick Search</span></a></li>
 		<li class="i_house"><a href="{{url_for('logs')}}" class=""><span><i  class="fa fa-history"></i>Logs</span></a></li>
-
         <li class="i_house"><a href="{{url_for('logs_search')}}" class=""><span><i  class="fa fa-search"></i>Logs Search</span></a></li>
-
-		<li class="i_house"><a href="{{url_for('login')}}" class=""><span><i  class="fa fa-sign-out"></i>Sign Out</span></a></li>
+        <li class="i_house"><a href="{{url_for('login')}}" class=""><span><i  class="fa fa-sign-out"></i>Sign Out</span></a></li>
 	</ul>
 </nav>
 <div id="container">
  <h1> Employee Form </h1>
  
- <form method="POST" action="">
+ <!--<form method="POST" action=""> -->
+     <form action = "" method = "Post" enctype="multipart/form-data">
 
  <div class="userinput">
    <label> Employee Id </label>
@@ -56,8 +55,10 @@
   </div>
 
 	 <div class="userinput">
-   <label> Employee Gender </label>
-   <input type="text" name="gender" required>
+   <label> Employee Gender :  </label>
+   Male<input type="radio" name="gender" value = "Male" required>
+   Female<input type="radio" name="gender" value="Female" required>
+   Other<input type="radio" name="gender" value="Other" required>
   </div>
 
 
@@ -79,6 +80,10 @@
    <label> Employee Blood Group </label>
    <input type="text" name="blood_group"  required>
   </div>
+     <div class="userinput">
+         <label>Employee Image</label>
+         <input type="file" name="file" required>
+     </div>
 
 
   <div style="text-align:center">
