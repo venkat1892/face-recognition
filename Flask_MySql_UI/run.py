@@ -1,11 +1,10 @@
 from flask import Flask, render_template, url_for, redirect, request  # importing Flask libraries
 from flask_mysqldb import MySQL  # Mysql library for database connection
 from werkzeug.utils import secure_filename
-import os
+import os  # for
 
 # Initialize the app
 app = Flask(__name__)
-
 
 if not os.path.exists('./Emp_Images'):
     os.makedirs('./Emp_Images')
@@ -105,8 +104,16 @@ def logs():
     mycur = mysql.connection.cursor()
     mycur.execute("select * from logs")
     data = mycur.fetchall()
-
     return render_template("logs.html", data=data)
+
+
+# today current employees in office
+@app.route('/today_check_in')
+def today_check_in():
+    mycur = mysql.connection.cursor()
+    mycur.execute("select * from logs where date(check_in) = current_date() and check_out is null;")
+    data = mycur.fetchall()
+    return render_template("today_check_in.html", data=data)
 
 
 # logs search function
