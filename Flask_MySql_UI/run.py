@@ -9,6 +9,9 @@ app = Flask(__name__)
 if not os.path.exists('./Emp_Images'):
     os.makedirs('./Emp_Images')
 
+if not os.path.exists('./Excel_Files'):
+    os.makedirs('./Excel_Files')
+
 # Database Connection
 app.config['MYSQL_HOST'] = 'localhost'  # Host
 app.config['MYSQL_USER'] = 'root'  # User_Name
@@ -171,6 +174,19 @@ def search():
         msg = mycur.fetchall()
         return render_template('search_success.html', msg=msg)
     return render_template("search.html")
+
+
+@app.route('/add_file')
+def add_file():
+    return render_template("add_file.html")
+
+
+@app.route('/file_success', methods=['POST'])
+def file_success():
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save(os.path.join('Excel_Files', secure_filename(f.filename)))
+        return render_template("file_success.html", name=f.filename)
 
 
 # calling main function
