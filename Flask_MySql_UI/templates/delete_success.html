@@ -1,10 +1,11 @@
+<!--Displaying deleted employee details -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Add, update and ...... </title>
+<title>Deleted employee details </title>
 </head>
 <body>
 	<header>
@@ -20,6 +21,7 @@
 	<a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
 	</div>
 	</header>
+	<!--Side navbar-->
 	<nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -35,6 +37,7 @@
 		<li class="i_house"><a href="{{url_for('login')}}" class=""><span><i  class="fa fa-sign-out"></i>Sign Out</span></a></li>
 	</ul>
 </nav>
+<!--Showing deleted employee details -->
 <h1>{{msg}} employee Deleted SuccessFully</h1>
 
 </body>

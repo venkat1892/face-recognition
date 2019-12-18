@@ -1,10 +1,11 @@
+<!--Displaying employee information-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Add, update and ...... </title>
+        
     <meta charset="UTF-8">
     <title>Employee Info</title>
 </head>
@@ -22,6 +23,7 @@
                         <a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
                 </div>
                 </header>
+                <!--Side navbar-->
                 <nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -40,7 +42,7 @@
    <div id="container"   >
 
 <h1>Employee Details</h1>
-
+<!--Showing employee information -->
 <table>
 
     <tr>

@@ -1,3 +1,4 @@
+<!--Updating employee details-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +22,7 @@
 	<a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
 	</div>
 	</header>
+	<!--Side navbar-->
 	<nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -38,22 +40,26 @@
 </nav>
 
 <div id="container">
+	<!--Displaying Update employee form-->
  <h1>Update Employee Form </h1>
 
  <form method="POST" action="">
 
  <div class="userinput">
+	 <!--Updating employee id-->
    <label> Employee Id </label>
    <input type="text" name="id" required >
   </div>
 
 
 <div class="userinput">
+	<!--Updating employee phone number-->
    <label> Employee Contact Number </label>
    <input type="number" name="phone" required>
   </div>
 
 	 <div class="userinput">
+		 <!--Updating employee address-->
    <label> Employee Address </label>
    <input type="text" name="address"  required>
   </div>
@@ -61,6 +67,7 @@
 
 
   <div style="text-align:center">
+	<!--Submit and reset buttons-->
 
    <input type="submit" class = "sampleBtn">
 

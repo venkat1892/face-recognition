@@ -1,3 +1,4 @@
+<!--Displaying Dashboard of employees-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,7 @@
 	<a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
 	</div>
 </header>
+<!--Side navbar-->
 <nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -35,7 +37,9 @@
 		<li class="i_house"><a href="{{url_for('login')}}" class=""><span><i  class="fa fa-sign-out"></i>Sign Out</span></a></li>
 	</ul>
 </nav>
+
 <section id="content">
+	<!--Adding employee icon -->
 	<div class="row">
 		<div class="Useroptn">
 			<div class="small-box bg-light-blue">
@@ -49,6 +53,7 @@
 			  <a href="{{url_for('add')}}" class="small-box-footer"> More info <i class="ffa ffa-arrow-circle-right"></i> </a>
 			</div>
 		</div>
+			<!--Updating employee icon -->
 		<div class="Useroptn"> 
 			<div class="small-box bg-orange">
 			  <div class="inner">
@@ -61,6 +66,7 @@
 			  <a href="{{url_for('update')}}" class="small-box-footer"> More info <i class="ffa ffa-arrow-circle-right"></i> </a>
 			</div>
 		</div>
+			<!--Deleting employee icon-->
 		<div class="Useroptn"> 
 			<div class="small-box bg-grass">
 			  <div class="inner">
@@ -73,6 +79,7 @@
 			  <a href="{{url_for('delete')}}" class="small-box-footer"> More info <i class="ffa ffa-arrow-circle-right"></i> </a>
 			</div>
 		</div>
+		<!--Search and log employee icon-->
 		<div class="Useroptn"> 
 			<div class="small-box bg-wood">
 			  <div class="inner">

@@ -1,10 +1,11 @@
+<!--Adding employee details through file-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Add, update and ...... </title>
+<title>Adding file </title>
 </head>
 <body>
 	<header>
@@ -20,6 +21,7 @@
          <a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
 	</div>
    </header>
+   <!--Side navbar-->
    <nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -35,10 +37,12 @@
 </nav>
 
 <div id="container">
-    <h1>Add Emp file </h1>
+	<!--Add employee through file-->
+    <h3>Add Emp file </h3>
     <form action = "/file_success" method = "post" enctype="multipart/form-data">
         <input type="file" name="file" />
-      <div style="text-align:center">
+	  <div style="text-align:center">
+		<!--Submit and reset buttons-->
 	  <input type="submit" value="Submit" class = "sampleBtn">
 	  <input type="reset"  value="Reset" class="sampleBtn">
   </div>

@@ -1,3 +1,4 @@
+<!--Displaying Current employee information -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +23,7 @@
                         <a href="{{url_for('login')}}"><img src="{{url_for('static', filename='images/logout.png')}}" width="80"></a>
                 </div>
                 </header>
+                <!--Side navbar-->
                 <nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -41,7 +43,7 @@
        <button></button>
 
 <table>
-
+<!--Displaying checkin and checkout of an employee   in a table -->
     <tr>
     <th>EmpLoyee Id</th>
     <th>Employee Name</th>

@@ -1,10 +1,11 @@
+<!--Delete employee details-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Add, update and ...... </title>
+<title>Delete Employee details </title>
 </head>
 <body>
 	<header>
@@ -23,6 +24,7 @@
 	
 	</div>
 	</header>
+	<!--Side navbar-->
 	<nav>
 	<ul id="nav">
 		<li id="Dash1"><a href="{{url_for('dashboard')}}" class="active"><span><i  class="fa fa-dashboard"></i>Dashboard</span></a></li>
@@ -39,21 +41,24 @@
 	</ul>
 </nav>
 <div id="container">
+	 <!--Delete employee details to form-->
  <h1> Delete Employee  </h1>
  
  <form method="Post" action="">
 
  <div class="userinput">
+	 <!--Delete employee id  to the form-->
    <label> Employee Id </label>
    <input type="text" name="id" placeholder="Enter Emp_id" required>
   </div>
 
   <div class="userinput">
+	  <!--Delete employee name  to the form-->
    <label> Employee Name  </label>
    <input type="text" name="emp_name" placeholder="Enter Emp_name" required>
   </div>
 
-  
+  <!--Submit and Reset buttons-->
   
   <div style="text-align:center">
    
